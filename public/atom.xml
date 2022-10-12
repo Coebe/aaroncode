@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>AaronCode</title>
+  <icon>https://www.gravatar.com/avatar/7cb91282a91b82d7fbe3ea46f69bcfa9</icon>
   
+  <link href="https://aaroncode.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
-  
-  <link href="http://example.com/"/>
-  <updated>2022-10-11T10:43:04.308Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://aaroncode.top/"/>
+  <updated>2022-10-12T09:58:11.551Z</updated>
+  <id>https://aaroncode.top/</id>
   
   <author>
-    <name>John Doe</name>
-    
+    <name>Aaron</name>
+    <email>youareaaron0@gmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>About Git</title>
+    <link href="https://aaroncode.top/[object%20Object]/2022/10/12/AboutGitundefined/"/>
+    <id>https://aaroncode.top/[object%20Object]/2022/10/12/AboutGitundefined/</id>
+    <published>2022-10-12T08:39:23.051Z</published>
+    <updated>2022-10-12T09:58:11.551Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p><img src="https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/submodule.jpg" alt="Submodule"> this image mean has <code>.git</code> file in child directory, 然后GitHub就会把这个文件夹视为一个子系统模块  </p><p>solve step:</p><ol><li>delete child directory <code>.git</code> file.</li><li>execute <code>git rm --cached [filename] // filename is the submodule directory</code>.</li><li>execute <code>git add .</code>.</li><li>execute <code>git commit</code>.</li><li>execute <code>git push origin [branchName]</code>.</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/Coebe/aaroncode/blob/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>The Step of Blog Construction</title>
-    <link href="http://example.com/2022/10/11/BlogConstruction/"/>
-    <id>http://example.com/2022/10/11/BlogConstruction/</id>
+    <link href="https://aaroncode.top/[object%20Object]/2022/10/11/BlogConstructionundefined/"/>
+    <id>https://aaroncode.top/[object%20Object]/2022/10/11/BlogConstructionundefined/</id>
     <published>2022-10-11T09:57:01.925Z</published>
-    <updated>2022-10-11T10:43:04.308Z</updated>
+    <updated>2022-10-12T10:39:57.704Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://app.netlify.com/sites/sprightly-croquembouche-951681/deploys"><img src="https://api.netlify.com/api/v1/badges/6417f999-72a6-4ebd-994d-0d5118d42bb3/deploy-status" alt="Netlify Status"></a>  </p><h3 id="Issuse"><a href="#Issuse" class="headerlink" title="Issuse"></a>Issuse</h3><p>bug statement:<br><code>extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug</code></p><ol><li>在hexo根目录执行命令：<code>npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</code>  </li><li>清除缓存 <code>hexo clean</code>  </li><li>重新生成静态文件 <code>hexo g</code>/<code>hexo generate</code></li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://app.netlify.com/sites/sprightly-croquembouche-951681/deploys"><img src="https://api.netlify.com/api/v1/badges/6417f999-72a6-4ebd-994d-0d5118d42bb3/deploy-status" alt="Netlify Status"></a>  </p><h3 id="Issuse"><a href="#Issuse" class="headerlink" title="Issuse"></a>Issuse</h3><p>bug statement:  </p><blockquote><p>extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug</p></blockquote><ol><li>在hexo根目录执行命令：<br><code>npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</code>  </li><li>清除缓存<br><code>hexo clean</code>  </li><li>重新生成静态文件<br><code>hexo g</code>/<code>hexo generate</code></li></ol><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code block example</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://app.netlify.com/sites/sprightly-croquembouche-951681/deploys&quot;&gt;&lt;img src=&quot;https://api.netlify.com/api/v1/badges/6417f999-7</summary>
+    <summary type="html">&lt;h3 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://app.netlify.com/sites/spr</summary>
       
     
     
@@ -38,9 +58,9 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/10/10/Hello-World-0/"/>
-    <id>http://example.com/2022/10/10/Hello-World-0/</id>
-    <published>2022-10-10T00:59:25.000Z</published>
+    <link href="https://aaroncode.top/[object%20Object]/2022/10/10/Hello-World-0undefined/"/>
+    <id>https://aaroncode.top/[object%20Object]/2022/10/10/Hello-World-0undefined/</id>
+    <published>2022-10-10T07:59:25.000Z</published>
     <updated>2022-10-10T00:59:25.893Z</updated>
     
     
@@ -51,8 +71,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/10/10/hello-world/"/>
-    <id>http://example.com/2022/10/10/hello-world/</id>
+    <link href="https://aaroncode.top/[object%20Object]/2022/10/10/hello-worldundefined/"/>
+    <id>https://aaroncode.top/[object%20Object]/2022/10/10/hello-worldundefined/</id>
     <published>2022-10-10T00:57:24.007Z</published>
     <updated>2022-10-10T00:56:02.451Z</updated>
     
