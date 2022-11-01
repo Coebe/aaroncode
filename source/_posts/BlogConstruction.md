@@ -7,6 +7,7 @@ data: 2022-10-10
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6417f999-72a6-4ebd-994d-0d5118d42bb3/deploy-status)](https://app.netlify.com/sites/sprightly-croquembouche-951681/deploys)  
 
+
 ### Issuse
 
 bug statement:  
