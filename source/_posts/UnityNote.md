@@ -20,17 +20,69 @@ highlight_ shrink:
 
 ### 操作
 
-**Hierarchy**  
-如果父节点与子节点的**缩放**不一致时，子物体旋转会让缩放产生异常变化。  
+#### Hierarchy
+
+如果父节点与子节点的**缩放**不一致（非等比缩放）时，子物体旋转会让缩放产生异常变化，因为基于非等比坐标系做出的变化，会导致子物体的位置、朝向计算错误。  
 如果对象的各个组件局部坐标系不一致，在执行某些旋转变换的时候会产生意料之外的变化。**要注意统一**  
 
 `Alt`+`Shift`+`A` 激活 gameObject 快捷键
 
-[Unity常用\[xxx\]用法,特性](https://blog.csdn.net/FifthGently/article/details/78363364)
+[Unity常用[xxx]用法、特性](https://blog.csdn.net/FifthGently/article/details/78363364)
 
 ### 旋转 Rotation
 
 [Unity transform.rotation和四元数的基本理解应用](https://taikr.com/article/3945)
+
+### Material & Shader
+
+#### 3D Text
+
+GUI/Text Shader是一种可以穿透的 shader，如果不想让3D文字穿透就得自己建一个shader来使用  
+> 这里**需要注意**的地方就是原始改颜色的位置已经不起作用了，因为已经替换了原始材质，所以需要改变自己新建的材质颜色  
+
+`Shader Code:`  
+
+``` Shader
+Shader "Custom/NewSurfaceShader"
+{
+    // 变量属性
+    Properties
+    {
+        _Color ("Color", Color) = (1,1,1,1)
+        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        // 只是命名不同，作用其实都相同
+        //_MainTex ("Font Texture", 2D) = "white" {}
+        //_Color ("Text Color", Color) = (1,1,1,1)
+    }
+    SubShader
+    {
+        Tags
+        {
+            // TODO: understand
+            "Queue" = "Geometry"
+            //"IgnoreProjector"="True" 
+            //"RenderType"="Transparent"
+        }
+        // 表象理解：控制单面显示，像 Plane 一样
+        Lighting Off Cull Off ZWrite On Fog 
+        { 
+            Mode Off
+        }
+        // 字面解释：用1减去源 α 值，想要的字体就会显现出来
+        Blend SrcAlpha OneMinusSrcAlpha
+        Pass 
+        {
+            Color [_Color]
+            SetTexture [_MainTex] 
+            {
+                combine primary, texture * primary
+            }
+        }
+    }
+}
+```
+
+然后搭配字体以及其自带的 Texture 来配置 material，其中shader属性选择自己新建的 `Custom/[NewSurfaceShader]`
 
 ## 工具
 
@@ -114,9 +166,11 @@ OpenVR->Application Type==Scene
 
 ### 脚本
 
+**Tip：** 删除不必要的事件函数。如果有空函数建议删除，因为在编译器执行空函数时也会消耗CPU的性能  
+
 > 如果脚本出现错误，Unity 编辑器会因为检查到出错而**无法进入运行模式**，这时可以在项目视图中新建文件夹 WebplayerTemplates，然后将出错的脚本拖入此文件夹下，所有位于该文件夹下的文件都会被识别为一般文件从而**不会被当作脚本编译**，这样就可以运行游戏了。
 
-[Unity常用\[xxx\]用法 特性](https://blog.csdn.net/FifthGently/article/details/78363364)
+[Unity常用[xxx]用法、特性](https://blog.csdn.net/FifthGently/article/details/78363364)
 
 - C#脚本代码不执行
   1. 对象没有绑定对应C#脚本，**可能是脚本名称和里面类的名称不一致**，导致的“脚本脱落”
