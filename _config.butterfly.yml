@@ -804,15 +804,26 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
+
+aplayer:
+  cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+  meting: true # MetingJS 支持
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
+  asset_inject: false # 自动插入Aplayer.js与Meting.js资源脚本（默认开启）
+  script_dir: some/place # Public 目录下脚本目录路径，默认: 'assets/js'
+  style_dir: some/place # Public 目录下样式目录路径，默认: 'assets/css'
+  # meting_api: http://xxx/api.php                # 自定义 Meting API 地址
+  # externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -936,7 +947,7 @@ CDN:
     # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
-    # meting_js:
+    meting_js:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:

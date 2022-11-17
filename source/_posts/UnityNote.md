@@ -20,6 +20,8 @@ highlight_ shrink:
 
 ### 操作
 
+<!-- <div class = "aplayer"  data-id = "000PeZCQ1i4XVs"  data-server = "tencent"  data-type = "artist"  data-mutex = "true"  data-preload = "auto"  data-theme = "#3F51B5"></div > -->
+
 #### Hierarchy
 
 如果父节点与子节点的**缩放**不一致（非等比缩放）时，子物体旋转会让缩放产生异常变化，因为基于非等比坐标系做出的变化，会导致子物体的位置、朝向计算错误。  
@@ -115,6 +117,13 @@ C# ---------------> CIL(Common Intermidiate Language)||MCIL ---------------> CLR
 
 ## 卡顿/BUG
 
+**Q:**
+> `Asset database transaction committed twice!`
+> `Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'`  
+
+**A:（未尝试）**  
+Unity Hub许可证到期了需要更新一下许可证  
+
 ---
 About Build  
 
@@ -165,6 +174,8 @@ OpenVR->Application Type==Scene
 ~这里如果是Display就会进入VR的黑色世界~  
 
 ### 脚本
+
+[论C#如何实现多继承](https://blog.csdn.net/zhanghongjie0302/article/details/38875865)  
 
 **Tip：** 删除不必要的事件函数。如果有空函数建议删除，因为在编译器执行空函数时也会消耗CPU的性能  
 
@@ -232,6 +243,7 @@ OpenVR->Application Type==Scene
 [unity 动态加载本地图片及排版功能](https://www.dounaite.com/article/628d1d41f8519f4c0cd325e9.html)  
 
 ---
+<div  class = "aplayer no-destroy"  data-id = "60198"  data-server = "netease"  data-type = "playlist"  data-fixed = "true"  data-autoplay = "true" >  </div >
 
 <div id="disqus_thread"></div>
 <script>
