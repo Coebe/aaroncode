@@ -117,11 +117,17 @@ C# ---------------> CIL(Common Intermidiate Language)||MCIL ---------------> CLR
 
 ## 卡顿/BUG
 
-**Q:**
+Error:  
+> `Not allowed to access vertices on mesh 'meshname' (isReadable is false; Read/Write must be enabled in import settings`
+
+A:  
+就是说需要把对应模型： Model-Meshes-Read/Write Enabled **[x]** 这个选项勾选就好了
+
+Error:  
 > `Asset database transaction committed twice!`
 > `Assertion failed on expression: 'errors == MDB_SUCCESS || errors == MDB_NOTFOUND'`  
 
-**A:（未尝试）**  
+A:（未尝试, 没有特别注意这个Bug 好像是重启项目之后就好了）  
 Unity Hub许可证到期了需要更新一下许可证  
 
 ---
