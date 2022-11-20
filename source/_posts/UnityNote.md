@@ -130,8 +130,7 @@ Error:
 A:（未尝试, 没有特别注意这个Bug 好像是重启项目之后就好了）  
 Unity Hub许可证到期了需要更新一下许可证  
 
----
-About Build  
+### About Build
 
 > Internal build system error. Backend exited with code -1073740791.
 tundra: error: Couldn't launch process
@@ -140,10 +139,18 @@ errno: 2 (No such file or directory) GetLastError: 1455 (0x000005AF):
 **解决：**  
 
 1. 重启Unity  
-2. 删除`Library/` 下对应项目名的文件（未尝试）
+2. 删除`Library/` 下对应项目名的文件（未尝试）  
 
----
-About Package  
+#### Alembic
+
+> `failed to load alembic at ../*.Project/Builds/*.Project_Data/StreamingAssets\Assets/.*.abc`
+
+**A:**  
+因为Unity针对 Streaming Assets， 打包时需要单独的把资源放到 `StreamingAssets/..` 目录下。  
+Streaming Assets 是用以区别需要放到特殊目录的资源文件夹，比如`.abc`格式的资源，还有[官方文档](https://docs.unity3d.com/Manual/StreamingAssets.html)中提到的在IOS设备中播放电影资源，就需要把对应的资源放到 `StreamingAssets/..` 目录下  
+同时这位[JohannesDeml](https://github.com/JohannesDeml/UnityAlembicSpawningError)大佬也给出了解决Alembic相关问题的方案
+
+### About Package
 
 > 错误 CS0234 命名空间“UnityEngine.XR”中不存在类型或命名空间名“Management”(是否缺少程序集引用?) Assembly-CSharp D:\Aaron\Proj\Metaverse_Project\MetaverseProject\Assets\HTC.UnityPlugin\VRModule\Modules\SteamVRv2Module.cs 18 活动
 
