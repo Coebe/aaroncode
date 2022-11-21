@@ -47,9 +47,13 @@ social:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
+  labels:
+    input_placeholder: <Now in testing>
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
 local_search:
@@ -947,7 +951,7 @@ CDN:
     # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
-    meting_js:
+    # meting_js:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:

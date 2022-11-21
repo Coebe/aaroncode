@@ -132,11 +132,16 @@ Unity Hub许可证到期了需要更新一下许可证
 
 ### About Build
 
+> `Shader error in 'VR/SpatialMapping/Wireframe': unrecognized identifier 'DEFAULT_UNITY_VERTEX_OUTPUT_STEREO_EYE_INDEX' at line 38 (on gles3)`
+
+solution:  
+双击错误后勾选Inspector面板 shader的 Preprocess only选项（不理解为什么）
+
 > Internal build system error. Backend exited with code -1073740791.
 tundra: error: Couldn't launch process
 errno: 2 (No such file or directory) GetLastError: 1455 (0x000005AF):  
 
-**解决：**  
+solution：
 
 1. 重启Unity  
 2. 删除`Library/` 下对应项目名的文件（未尝试）  
