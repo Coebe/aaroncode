@@ -223,6 +223,10 @@ OpenVR->Application Type==Scene
         }
 ```
 
+#### 坐标
+
+局部坐标转世界坐标 Transform.TransformPoint(Vector3);
+
 ### 音效
 
 ~~衰减的计算方式~~ ~移到TODO~  
