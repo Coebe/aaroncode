@@ -24,8 +24,16 @@ highlight_ shrink:
 
 #### Hierarchy
 
+##### Mention
+
+`transform.Find(string childname)` 不能递归查找子节点
+
+##### Coordinate
+
 如果父节点与子节点的**缩放**不一致（非等比缩放）时，子物体旋转会让缩放产生异常变化，因为基于非等比坐标系做出的变化，会导致子物体的位置、朝向计算错误。  
 如果对象的各个组件局部坐标系不一致，在执行某些旋转变换的时候会产生意料之外的变化。**要注意统一**  
+
+##### Hot key
 
 `Alt`+`Shift`+`A` 激活 gameObject 快捷键
 
@@ -89,6 +97,12 @@ Shader "Custom/NewSurfaceShader"
 ## 工具
 
 ### UI
+
+- UI can interactable Conditions:
+  - `Event System` Component over `InputModule`
+    to receive device input message
+  - `Graphic Raycaster` Component over `Canvas`
+    to receive screen operating
 
 脚本引用命名空间 UI和UIElement 不一样  
 
@@ -224,6 +238,10 @@ OpenVR->Application Type==Scene
             }
         }
 ```
+
+#### 坐标
+
+局部坐标转世界坐标 Transform.TransformPoint(Vector3);
 
 ### 音效
 
