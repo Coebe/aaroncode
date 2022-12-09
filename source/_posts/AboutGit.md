@@ -5,6 +5,17 @@ cover: https://s2.loli.net/2022/11/02/MPCiJkYKSn3jm4c.png
 
 ## Problem
 
+### Authentication
+
+> authenticate cmd
+> `$ ssh -T git@github.com`
+Hi Coebe! You've successfully authenticated, **but GitHub does not provide shell access**.
+
+solve:  
+  `$ git remote set-url origin git@github.com:Coebe/pragmadump.git`
+
+### Modules
+
 ![Submodule](https://s2.loli.net/2022/11/02/iRJrgEc4mDWOPUT.png)this image mean has `.git` file in child directory, 然后GitHub就会把这个文件夹视为一个子系统模块,从而不能正常更新Git  
 
 solve step:
