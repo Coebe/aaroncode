@@ -104,6 +104,8 @@ Shader "Custom/NewSurfaceShader"
   - `Graphic Raycaster` Component over `Canvas`
     to receive screen operating
 
+脚本引用命名空间 UI和UIElement 不一样  
+
 当画布没有正对着相机时，对应上面的按钮之类的交互控件则不会被触发
 
 ### DOTween
