@@ -1,7 +1,7 @@
 ---
 title: The Step of Blog Construction
-data: 2022-10-10
-cover: https://s2.loli.net/2022/11/02/JsOEgrT3Uh9ju4Q.png
+date: "2022-10-10 17:40:08"
+cover: https://s2.loli.net/2022/12/09/16jNOPTasK8VM4X.png
 ---
 
 ### Reference

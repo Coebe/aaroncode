@@ -1,7 +1,7 @@
 ---
 title: LearningHowToLearn
 date: 2022-11-20 09:52:59
-tags:
+cover: https://s2.loli.net/2022/12/09/n9f5cOLGUSFxBKy.png
 ---
 
 ## Efficiency learning
