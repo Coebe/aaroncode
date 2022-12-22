@@ -32,6 +32,8 @@ solve:
 
 ### Timeout
 
+[Fixing git push/pull timing out](https://bengsfort.github.io/articles/fixing-git-push-pull-timeout/)  
+
 - **Issue:pull timeout**
   *`$ git pull`  
   `ssh: connect to host github.com port 22: Connection timed out`  
