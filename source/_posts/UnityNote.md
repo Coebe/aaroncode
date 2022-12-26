@@ -18,6 +18,30 @@ highlight_ shrink:
 
 ## 知识点
 
+### TODO
+
+C#怎么像Lua那样定义全局变量
+
+```lua
+  sth.lua\\
+  local GF = require("Global/Function")
+
+  --- other file
+  GF:sthFunction()  √
+```
+
+```C#
+  SceneController.cs\class SceneController\
+  public static SCI = SceneController.Instance;
+
+  /// other file
+  SCI.sthFunction();  ×
+```
+
+### C\#
+
+[Microsoft-Learn keywords-this](https://learn.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/this)
+
 ### 操作
 
 <!-- <div class = "aplayer"  data-id = "000PeZCQ1i4XVs"  data-server = "tencent"  data-type = "artist"  data-mutex = "true"  data-preload = "auto"  data-theme = "#3F51B5"></div > -->
@@ -27,6 +51,11 @@ highlight_ shrink:
 ##### Mention
 
 `transform.Find(string childname)` 不能递归查找子节点
+
+
+- `Error: NullReferenceException: Object reference not set to an instance of an object`
+  - reason:
+    1. didn't assign game object in Hierarchy/Inspector
 
 ##### Coordinate
 
@@ -96,7 +125,9 @@ Shader "Custom/NewSurfaceShader"
 
 ## 工具
 
-### UI
+### GUI
+
+[Unity UGUI 按钮绑定事件的 4 种方式](https://www.cnblogs.com/isayes/p/6370168.html)
 
 - UI can interactable Conditions:
   - `Event System` Component over `InputModule`
@@ -145,6 +176,20 @@ Error:
 
 A:（未尝试, 没有特别注意这个Bug 好像是重启项目之后就好了）  
 Unity Hub许可证到期了需要更新一下许可证  
+
+### UnityEngine
+
+#### Spawn object
+
+- *Issue：*
+  - `Error: Cannot instantiate objects with a parent which is persistent. New object will be created without a parent.`
+    - **reason:**`GameObject newObj = Instantiate(prefab, pointTrans);`, the pointTrans is prefab
+  - `Error: Setting the parent of a transform which resides in a Prefab Asset is disabled to prevent data corruption`
+    - **reason:**`newObj.transform.parent = pointTrans`, the same- try to use prefab transform to be parent.
+
+### 莫名其妙的bug
+
+场景中prefab中变量没有应用（apply）到Prefab中 Runtime 时，脚本里对应公布到 Inspector 的变量是未赋值状态，而且就算 Apply 场景中对象更新了 Inspector 里面的变量也一直是第一次改变（非初始状态）的状态
 
 ### About Build
 
