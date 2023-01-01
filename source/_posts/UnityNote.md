@@ -20,6 +20,8 @@ highlight_ shrink:
 
 ### TODO
 
+研究Unity Awake Start函数运行周期
+
 C#怎么像Lua那样定义全局变量
 
 ```lua
