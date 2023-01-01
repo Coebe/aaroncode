@@ -8,6 +8,12 @@ cover: https://s2.loli.net/2022/12/09/16jNOPTasK8VM4X.png
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6417f999-72a6-4ebd-994d-0d5118d42bb3/deploy-status)](https://app.netlify.com/sites/sprightly-croquembouche-951681/deploys)  
 
+### Using Blog
+
+[official document](https://hexo.io/zh-cn/docs/writing.html)  
+generate new blog file:
+`hexo new <filename>`
+
 ### Issuse
 
 ### About Connexity ~连通性问题~
