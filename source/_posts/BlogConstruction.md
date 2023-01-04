@@ -1,7 +1,7 @@
 ---
 title: The Step of Blog Construction
 date: "2022-10-10 17:40:08"
-cover: https://s2.loli.net/2022/12/09/16jNOPTasK8VM4X.png
+cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/BlogConstruction.png?raw=true
 ---
 
 ### Reference
@@ -10,11 +10,18 @@ cover: https://s2.loli.net/2022/12/09/16jNOPTasK8VM4X.png
 
 ### Using Blog
 
+修改根配置文件的这个参数，：使用资源文件的文件展示
+over config file change `post_asset_floder: true` parameter, then can use local path to config cover (maybe all the photo/img?)
+
 [official document](https://hexo.io/zh-cn/docs/writing.html)  
 generate new blog file:
 `hexo new <filename>`
 
 ### Issuse
+
+### Aout post
+
+在使用博客资源展示图片时如果使用github的路径为什么需要在链接末尾加上`?raw=true` ?
 
 ### About Connexity ~连通性问题~
 

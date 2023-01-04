@@ -1,6 +1,7 @@
 ---
 title: TypeScriptLearn
 date: 2022-12-29 08:01:58
+cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/TypeScriptLearn.png?raw=true
 tags:
 ---
 

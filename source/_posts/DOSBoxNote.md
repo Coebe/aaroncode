@@ -1,6 +1,7 @@
 ---
 title: DOSBoxNote
 date: 2022-12-26 23:00:39
+cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/DOSBoxNote.png?raw=true
 tags:
 ---
 

@@ -95,10 +95,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://s2.loli.net/2022/11/02/PKEn9TWxIfaZeiY.jpg
+index_img: /img/background.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://s2.loli.net/2022/11/02/PKEn9TWxIfaZeiY.jpg
+default_top_img: /img/background.png
 
 # The banner image of archive page
 archive_img: https://s2.loli.net/2022/11/02/CfAwp81Siq6kWJ9.jpg
