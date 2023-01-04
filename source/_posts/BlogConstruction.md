@@ -17,6 +17,68 @@ over config file change `post_asset_floder: true` parameter, then can use local 
 generate new blog file:
 `hexo new <filename>`
 
+#### Side Bar
+
+1. create css file
+   my path: `aaroncode\source\custom\sideBar.css`
+2. using that css in `config.inject`
+
+   ```yml
+   <!-- _config.yml -->
+   <!-- context -->
+   ...
+   inject:
+     head:
+       - <link rel="stylesheet" href="/custom/sideBar.css">
+     bottom:
+       # - <script src="xxxx"></script>
+   ...
+   <!-- context -->
+   ```
+
+3. modified css file to beauty side bar
+
+   ```css
+   <!-- my config -->
+    /* 滚动条 */
+
+    /* no effect about width setting */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(160, 217, 255, 0.623);
+        /* border-radius: 100em; */
+    }
+
+    /* the bar */
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(248, 156, 156);
+        background-image: -webkit-linear-gradient(45deg,
+                /* render sequence is reverse */
+                rgb(255, 149, 149) 10%,
+
+                rgb(155, 243, 255) 30%,
+                rgb(158, 156, 248) 50%,
+                rgb(155, 243, 255) 75%,
+
+                transparent 85%,
+                transparent);
+        border-radius: 5em;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+    /* ::-moz-selection {
+        color: #fff;
+        background-color: #00eeff;
+    } */
+   ```
+
 ### Issuse
 
 ### Aout post

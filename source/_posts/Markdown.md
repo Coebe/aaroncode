@@ -1,7 +1,7 @@
 ---
 title: Markdown note
 date: "2021-11-12 16:13:22"
-cover: https://s2.loli.net/2022/11/02/EehvFzxpLkPDum5.png
+cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/Markdown.png?raw=true
 ---
 
 ## User snippets' command
