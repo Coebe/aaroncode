@@ -296,7 +296,7 @@ OpenVR->Application Type==Scene
 
 ### 文件
 
-刚开始出现了图片比例被扭曲了，**不知道**怎么解决，但是通过将图片直接导入Unity**误打误撞**了解到了Unity对导入图片的格式要求（1:1, 1:2, 2:1）
+刚开始出现了图片比例被扭曲了，**不知道**怎么解决，但是通过将图片直接导入Unity*误打误撞*了解到了Unity对导入图片的格式要求（1:1, 1:2, 2:1）
 
 - 加载文件夹的文件到Unity  
   - `var texture = Resources.Load(texPath) as Texture;`  
@@ -328,24 +328,6 @@ OpenVR->Application Type==Scene
 [unity 动态加载本地图片及排版功能](https://www.dounaite.com/article/628d1d41f8519f4c0cd325e9.html)  
 
 ---
-<div  class = "aplayer no-destroy"  data-id = "60198"  data-server = "netease"  data-type = "playlist"  data-fixed = "true"  data-autoplay = "true" >  </div >
 
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://aaroncode-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- inline music plugin -->
+<!-- <div class = "aplayer no-destroy" data-id = "60198" data-server = "netease" data-type = "playlist" data-fixed = "true" data-autoplay = "true"></div >
