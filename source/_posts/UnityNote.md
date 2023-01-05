@@ -42,6 +42,7 @@ C#怎么像Lua那样定义全局变量
 
 ### C\#
 
+switch to use upper scope  
 [Microsoft-Learn keywords-this](https://learn.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/this)
 
 ### 操作
@@ -330,4 +331,4 @@ OpenVR->Application Type==Scene
 ---
 
 <!-- inline music plugin -->
-<!-- <div class = "aplayer no-destroy" data-id = "60198" data-server = "netease" data-type = "playlist" data-fixed = "true" data-autoplay = "true"></div >
+<!-- <div class = "aplayer no-destroy" data-id = "60198" data-server = "netease" data-type = "playlist" data-fixed = "true" data-autoplay = "true"></div > -->
