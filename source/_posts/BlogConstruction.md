@@ -1,7 +1,7 @@
 ---
 title: The Step of Blog Construction
 date: "2022-10-10 17:40:08"
-cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/BlogConstruction.png?raw=true
+cover: BlogConstruction.png
 ---
 
 ### Reference
@@ -17,10 +17,10 @@ over config file change `post_asset_floder: true` parameter, then can use local 
 generate new blog file:
 `hexo new <filename>`
 
-#### Side Bar
+#### Scroll Bar
 
 1. create css file
-   my path: `aaroncode\source\custom\sideBar.css`
+   my path: `aaroncode\source\custom\scrollBar.css`
 2. using that css in `config.inject`
 
    ```yml
@@ -29,14 +29,14 @@ generate new blog file:
    ...
    inject:
      head:
-       - <link rel="stylesheet" href="/custom/sideBar.css">
+       - <link rel="stylesheet" href="/custom/scrollBar.css">
      bottom:
        # - <script src="xxxx"></script>
    ...
    <!-- context -->
    ```
 
-3. modified css file to beauty side bar
+3. modified css file to beauty scroll bar
 
    ```css
    <!-- my config -->
@@ -99,6 +99,7 @@ bug statement:
 > extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug
 
 solution:  
+
 1. 在hexo根目录执行命令：
 `npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive`  
 2. 清除缓存

@@ -2,7 +2,7 @@
 title: C-CPPLearning
 date: 2023-01-03 11:55:54
 tags:
-cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/C-CPPLearning.png?raw=true
+cover: C-CPPLearning.png
 ---
 
 ## Data Type

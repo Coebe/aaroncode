@@ -1,7 +1,7 @@
 ---
 title: About Git
 date: "2022-10-01 17:41:08"
-cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/AboutGit.png?raw=true
+cover: AboutGit.png
 ---
 
 ## Issue

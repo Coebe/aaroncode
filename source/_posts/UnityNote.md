@@ -2,8 +2,7 @@
 title: Unity Note
 date: "2022-11-01 17:40:08"
 tags:
-top_img: https://s2.loli.net/2022/11/01/34Nx9ZQyfaViMCd.jpg
-cover: https://s2.loli.net/2022/11/01/34Nx9ZQyfaViMCd.jpg
+cover: UnityNote.png
 updated: 
 type: 
 comments: 

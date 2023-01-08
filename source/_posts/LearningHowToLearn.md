@@ -1,7 +1,7 @@
 ---
 title: LearningHowToLearn
 date: 2022-11-20 09:52:59
-cover: https://github.com/Coebe/aaroncode/blob/main/source/_posts/src/LearningHowToLearn.png?raw=true
+cover: LearningHowToLearn.png
 ---
 
 ## Efficiency learning
