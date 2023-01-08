@@ -67,8 +67,8 @@ solve:
      `git config --global --unset http.xxx`  
     - if wanna set proxy:
      `git config --global http.proxy http://xxx/`
-     if needs account & password **don't know meaning**  
-     `git config --global http.proxy http://user:pwd@ipaddress:port`
+      if needs account & password **don't know meaning**  
+      `git config --global http.proxy http://user:pwd@ipaddress:port`
 
 ### Secure & Authentication
 
@@ -81,6 +81,8 @@ solve:
   - do not use PRIVATE key, use the `.pub` sub file (under directory: ~/.ssh/)
 
 ### Submodule
+
+
 
 ![Submodule](https://s2.loli.net/2022/11/02/iRJrgEc4mDWOPUT.png)this image mean has `.git` file in child directory, 然后GitHub就会把这个文件夹视为一个子系统模块,从而不能正常更新Git  
 

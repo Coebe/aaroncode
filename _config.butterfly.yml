@@ -39,11 +39,17 @@ copy:
 social:
   # fab fa-github: https://github.com/Coebe || Github
   fas fa-envelope: youareaaron0@gmail.com || Email
-  #fa fa-address-book: xxx || Book
+  fa fa-laptop-code: https://leetcode.cn/u/aaroncode/ || LeetCode
+  # fa fa-address-book: xxx || Book
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
 # --------------------------------------
+
+algolia:
+  applicationID: U6QCVP4ZGT
+  apiKey: 6c12f2e536b6d4b0efbf2040d2f6768a
+  indexName:
 
 # Algolia search
 algolia_search:
@@ -883,7 +889,9 @@ inject:
   head:
     - <link rel="stylesheet" href="/custom/sideBar.css">
   bottom:
-    # - <script src="xxxx"></script>
+    # - <script src="/custom/cardInfo.styl"></script>
+    # - <script src="https://kit.fontawesome.com/8a35a2bb32.js" crossorigin="anonymous"></script>
+    - <script src="/assets/algolia/algoliasearchLite.min.js" async></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
