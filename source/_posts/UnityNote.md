@@ -6,7 +6,7 @@ cover: UnityNote.png
 updated: 
 type: 
 comments: 
-description: "Unity learning note"
+description: Unity learning note
 keywords: Unity learning note
 mathjax: 
 katex: 

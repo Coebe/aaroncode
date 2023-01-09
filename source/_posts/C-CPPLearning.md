@@ -3,6 +3,7 @@ title: C-CPPLearning
 date: 2023-01-03 11:55:54
 tags:
 cover: C-CPPLearning.png
+description: C/C++ note && data structure, algorithm
 ---
 
 ## Data Type

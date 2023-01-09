@@ -2,6 +2,7 @@
 title: About Git
 date: "2022-10-01 17:41:08"
 cover: AboutGit.png
+description: Git operation && facing issue
 ---
 
 ## Issue

@@ -37,7 +37,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/Coebe || Github
+  fab fa-github: https://github.com/Coebe || Github
   fas fa-envelope: youareaaron0@gmail.com || Email
   fa fa-laptop-code: https://leetcode.cn/u/aaroncode/ || LeetCode
   # fa fa-address-book: xxx || Book
@@ -53,7 +53,7 @@ algolia:
 
 # Algolia search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
   labels:
@@ -178,7 +178,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
@@ -673,7 +673,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/Coebe
@@ -891,7 +891,7 @@ inject:
   bottom:
     # - <script src="/custom/cardInfo.styl"></script>
     # - <script src="https://kit.fontawesome.com/8a35a2bb32.js" crossorigin="anonymous"></script>
-    - <script src="/assets/algolia/algoliasearchLite.min.js" async></script>
+    # - <script src="/assets/algolia/algoliasearchLite.min.js" async></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

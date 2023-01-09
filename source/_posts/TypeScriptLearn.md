@@ -3,6 +3,7 @@ title: TypeScriptLearn
 date: 2022-12-29 08:01:58
 cover: TypeScriptLearn.png
 tags:
+description: TypeScript learning note
 ---
 
 ## Describe

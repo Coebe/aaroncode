@@ -2,6 +2,7 @@
 title: LearningHowToLearn
 date: 2022-11-20 09:52:59
 cover: LearningHowToLearn.png
+description: Potato learning note
 ---
 
 ## Efficiency learning

@@ -2,6 +2,7 @@
 title: Markdown note
 date: "2021-11-12 16:13:22"
 cover: Markdown.png
+description: Markdown note
 ---
 
 ## User snippets' command

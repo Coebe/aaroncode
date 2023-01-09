@@ -2,6 +2,7 @@
 title: The Step of Blog Construction
 date: "2022-10-10 17:40:08"
 cover: BlogConstruction.png
+description: Hexo blog facing issue
 ---
 
 ### Reference
