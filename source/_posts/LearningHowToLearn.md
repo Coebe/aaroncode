@@ -2,6 +2,8 @@
 title: LearningHowToLearn
 date: 2022-11-20 09:52:59
 cover: LearningHowToLearn.png
+tags:
+    - Note
 description: Potato learning note
 ---
 

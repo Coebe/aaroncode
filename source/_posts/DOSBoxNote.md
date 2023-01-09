@@ -3,6 +3,8 @@ title: DOSBoxNote
 date: 2022-12-26 23:00:39
 cover: DOSBoxNote.png
 tags:
+    - DOSBox
+    - Construction
 description: DOSBox software tutorial
 ---
 

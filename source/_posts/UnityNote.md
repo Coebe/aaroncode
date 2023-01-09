@@ -1,7 +1,9 @@
 ---
 title: Unity Note
 date: "2022-11-01 17:40:08"
-tags:
+tags: 
+    - Unity
+    - Note
 cover: UnityNote.png
 updated: 
 type: 
