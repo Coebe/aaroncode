@@ -679,7 +679,7 @@ aside:
       link: https://github.com/Coebe
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: It's my knowledge base, issue note
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
