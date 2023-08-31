@@ -49,7 +49,12 @@ social:
 algolia:
   applicationID: U6QCVP4ZGT
   apiKey: 6c12f2e536b6d4b0efbf2040d2f6768a
-  indexName:
+  indexName: "aaroncode"
+  chunkSize: 5000
+  fields:
+    - title
+    - permalink
+    - content:strip:truncate,0,500
 
 # Algolia search
 algolia_search:
@@ -63,9 +68,17 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   preload: false
   CDN:
+
+# hexo-generator-serchdb search
+search:
+  enable: true
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
 # Math (數學)
 # --------------------------------------
